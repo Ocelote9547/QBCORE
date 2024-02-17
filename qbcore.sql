@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `account_name` (`account_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
-
 CREATE TABLE IF NOT EXISTS `bank_statements` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(11) DEFAULT NULL,
